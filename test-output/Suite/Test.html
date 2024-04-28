@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 29 13:08:20 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89805 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='FutureGrail.Home.homePageBanner()'><b>homePageBanner</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnMedia()'><b>tnMedia</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnFaq()'><b>tnFaq</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.Home.planYourVisit()'><b>planYourVisit</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.Home.meadia()'><b>meadia</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>46</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.media()'><b>media</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.favoutiter()'><b>favoutiter</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.aboutUs()'><b>aboutUs</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>2</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnMoreEvent()'><b>tnMoreEvent</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>2</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.services()'><b>services</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnvault()'><b>tnvault</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.siteLoading()'><b>siteLoading</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.events()'><b>events</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.Home.logIn()'><b>logIn</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>4</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.tAndC()'><b>tAndC</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.Home.visitOurMuseumVideo()'><b>visitOurMuseumVideo</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.Home.ourOfferings()'><b>ourOfferings</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.Home.stayConnected()'><b>stayConnected</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>3</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.Home.ourCollections()'><b>ourCollections</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.Home.homePagePagescroll()'><b>homePagePagescroll</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.Home.coverValuesCards()'><b>coverValuesCards</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.theVault()'><b>theVault</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.siteLoading()'><b>siteLoading</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnaboutUs()'><b>tnaboutUs</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.logIn()'><b>logIn</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>4</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnmuseum()'><b>tnmuseum</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnservices()'><b>tnservices</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.privacyPolicy()'><b>privacyPolicy</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.museum()'><b>museum</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>2</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.BNavigationBars.logIn()'><b>logIn</b><br>Test class: FutureGrail.BNavigationBars</td>
+<td></td>
+<td>3</td>
+<td>FutureGrail.BNavigationBars@783a467b</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnAuction()'><b>tnAuction</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.TNavigationBars.tnMAboutUs()'><b>tnMAboutUs</b><br>Test class: FutureGrail.TNavigationBars</td>
+<td></td>
+<td>0</td>
+<td>FutureGrail.TNavigationBars@7db12bb6</td></tr>
+<tr>
+<td title='FutureGrail.Home.siteLoading()'><b>siteLoading</b><br>Test class: FutureGrail.Home</td>
+<td></td>
+<td>1</td>
+<td>FutureGrail.Home@13fd2ccd</td></tr>
+</table><p>
+</body>
+</html>
