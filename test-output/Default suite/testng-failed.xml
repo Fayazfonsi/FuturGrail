@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FutureGrail.Home">
+      <class name="FutureGrail.BNavigationBars">
         <methods>
-          <include name="visitOurMuseumVideo"/>
+          <include name="media"/>
           <include name="afterSuite"/>
+          <include name="events"/>
           <include name="beforeSuite"/>
+          <include name="logIn"/>
+          <include name="tAndC"/>
+          <include name="museum"/>
+          <include name="theVault"/>
+          <include name="aboutUs"/>
+          <include name="privacyPolicy"/>
+          <include name="services"/>
         </methods>
-      </class> <!-- FutureGrail.Home -->
+      </class> <!-- FutureGrail.BNavigationBars -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
